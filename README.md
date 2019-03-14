@@ -90,11 +90,11 @@ The `master` git branch is our default branch. The responsible ways to use git i
 
 ## Making a branch with `git branch`
 
-To keep master clean, when we want to start a new feature, we should do it in an isolated feature branch. Our timeline will look as follows:
+To keep `master` clean, when we want to start a new feature, we should do it in an isolated feature branch. Our timeline will look as follows:
 
 ![Feature Branch](https://dl.dropboxusercontent.com/s/d61r0fxyriaf5oj/2015-11-02%20at%2011.52%20AM.png)
 
-After commit 2, we will branch out of master and create a new timeline for commits and events specifically related to the new feature. The master timeline remains unchanged and clean. Now that we've covered the idea of the new-feature branch, let's actually make it.
+After commit 2, we will branch out of `master` and create a new timeline for commits and events specifically related to the new feature. The master timeline remains unchanged and clean. Now that we've covered the idea of the `new-feature` branch, let's actually make it.
 
 To make a new branch simply type: `git branch <branch name>`. In the case of a branch relating to a new feature, we'd name the branch `new-feature` like so:
 
