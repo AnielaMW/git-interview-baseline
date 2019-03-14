@@ -36,7 +36,7 @@ Wrong. It's about to become a very big deal.
 
 Suddenly we notice a big bug, the mother of all bugs, and it's currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of our code can make everything work again.
 
-Unfortunately, even if we make that commit, we can't currently deploy it because while that commit might fix the bug, we'd still be pushing our half-finished and broken new-feature.
+Unfortunately, even if we make that commit, we can't currently deploy it. While that commit might fix the bug, we'd still be pushing our half-finished and broken new-feature.
 
 ```
 r4212d1 Fix to application breaking bug (aviflombaum, just now)
