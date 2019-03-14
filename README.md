@@ -2,20 +2,23 @@
 
 ## Objectives
 
-1. Make a new branch for your repository with `git branch`.
-2. Checkout a branch with `git checkout`.
-3. Create and checkout a new branch with `git checkout -b`.
-4. Create commits within a branch.
-5. Merge branches with `git merge`.
-6. Update branches from remotes with `git fetch`.
-7. Merge updated remote branches with `git merge`.
-8. Update and merge remote branches with `git pull`.
+1. Understand the Master branch.
+2. Make a new branch for your repository with `git branch`.
+3. Checkout a branch with `git checkout`.
+4. Create and checkout a new branch with `git checkout -b`.
+5. Create commits within a branch.
+6. Merge branches with `git merge`.
+7. Update branches from remotes with `git fetch`.
+8. Merge updated remote branches with `git merge`.
+9. Update and merge remote branches with `git pull`.
 
 ## Overview
 
-A key to collaborating with git is to keep discrete and individual lines of work isolated from each other. Consider the following scenario.
+The key to collaborating with git is to keep individual lines of work isolated from the currently working codebase.
 
-You start work on a big feature, making a few commits that don't entirely finish the feature. Your git log might look like:
+Consider the following scenario.
+
+We start working on a big feature, something that will revolutionize the world as we know it. Making a few commits that don't entirely finish the feature. Our git log might look like:
 
 ```
 512bec5 Still broken, working on new-feature (aviflombaum, 2 hours ago)
@@ -23,9 +26,17 @@ You start work on a big feature, making a few commits that don't entirely finish
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-Two days ago we started working on our new-feature. Yesterday we were almost done. Today we made progress, but it's still broken. In our current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
+Two days ago we started working on our new-feature. Yesterday we were almost done. Today we made progress, but it's still broken.
 
-But no big deal, right? We can just wait until we're done with new-feature to deploy our code and push the repository live to our users. Here's what happens though. We notice a big bug that is currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of your code can make everything work again. Unfortunately, even if you made that commit, you can't currently deploy it because while that commit might fix the bug, you'd still be pushing your half-finished and broken new-feature.
+In the current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
+
+We can just wait until we're done with new-feature to deploy our code and push the repository live to our users. It's no big deal, right?
+
+Wrong. It's about to become a very big deal.
+
+Suddenly we notice a big bug, the mother of all bugs, and it's currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of our code can make everything work again.
+
+Unfortunately, even if we make that commit, we can't currently deploy it because while that commit might fix the bug, we'd still be pushing our half-finished and broken new-feature.
 
 ```
 r4212d1 Fix to application breaking bug (aviflombaum, just now)
@@ -34,7 +45,7 @@ r4212d1 Fix to application breaking bug (aviflombaum, just now)
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-See, we can't push all those commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
+As you can see, we can't push all these commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
 
 ## Making a branch with `git branch`
 
