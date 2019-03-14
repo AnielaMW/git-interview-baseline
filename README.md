@@ -53,14 +53,14 @@ Let's make a repository that we can use as a sandbox to experiment with the coll
 
 From our home directory we're going to make a new directory for our mission-critical-application.
 
-1. We made a new directory with `mkdir mission-critical-application`.
-2. We moved into that directory with `cd mission-critical-application`.
-3. We turned that directory into a git repository with `git init`.
-4. We created our application `touch application.rb`.
-5. We programmed an entire working first version in `application.rb` (*not reflected in the CLI commands above, but we did, and it was awesome, great job*).
-6. We added our `application.rb` to git with `git add application.rb`.
-7. We committed the first working version of our application with `git commit -m "First working version of application.rb"`.
-8. You deploy your application to production and people start using it (*also not reflected in the CLI commands above, but we did, and it too was awesome, great job*).
+1. Make a new directory with `mkdir mission-critical-application`.
+2. Move into that directory with `cd mission-critical-application`.
+3. Turn that directory into a git repository with `git init`.
+4. Create our application `touch application.rb`.
+5. We program an entire working first version in `application.rb` (*not reflected in the CLI commands, but we did, and it was awesome, great job*).
+6. Added our `application.rb` to git with `git add application.rb`.
+7. Commit the first working version of our application with `git commit -m "First working version of application.rb"`.
+8. Deploy our application to production and people start using it (*also not reflected in the CLI commands, but we did, and it too was awesome, great job*).
 
 With our application online and customers rolling in, we notice a bug and quickly add a fix in the form of a file, `first-bug-fix.rb` (*this is just an example*).
 
