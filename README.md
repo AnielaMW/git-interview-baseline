@@ -64,11 +64,9 @@ From our home directory we're going to make a new directory for our mission-crit
 
 With our application online and customers rolling in, we notice a bug and quickly add a fix in the form of a file, `first-bug-fix.rb` (*this is just an example*).
 
-```
-mission-critical-application $ touch first-bug-fix.rb
-mission-critical-application $ git add first-bug-fix.rb
-mission-critical-application $ git commit -m "First bug fix"
-```
+1. Create our fix `touch first-bug-fix.rb`.
+2. Added our `first-bug-fix.rb` to git with `git add first-bug-fix.rb`.
+3. Commit the fix to our application with `git commit -m "First bug fix"`.
 
 Right now our git log could be visualized as a timeline composed of two commits.
 
