@@ -47,9 +47,9 @@ fbee832 Started new-feature (aviflombaum, 2 days ago)
 
 As you can see, we can't push all these commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
 
-## Making a branch with `git branch`
+## Getting started with the Master branch.
 
-Let's quickly make a repository that we can use as a sandbox to experiment with the collaborative features of git. You don't have to follow along, you'll be able to understand the concepts from the reading but if you'd like, you can copy and paste these commands locally.
+Let's make a repository that we can use as a sandbox to experiment with the collaborative features of git. You can type or copy and paste these commands locally. We recommend you follow along, but you don't have to; you'll be able to understand the concepts from the reading.
 
 From our home directory we're going to make a new directory for our mission-critical-application.
 
@@ -99,6 +99,7 @@ nothing to commit, working directory clean
 
 The `master` git branch is our default branch. One of the responsible ways to use git is to make sure that the `master` branch is always clean with working code so that if we ever need to add a bug fix, we can do it and deploy a new version of the application immediately. We don't put broken code in master so that we can always deploy master.
 
+## Making a branch with `git branch`
 ### Starting a new feature with `git branch new-feature`
 
 To keep master clean, when we want to start a new feature, we should do it in an isolated feature branch. Our timeline will look as follows:
