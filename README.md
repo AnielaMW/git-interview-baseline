@@ -45,7 +45,7 @@ r4212d1 Fix to application breaking bug (aviflombaum, just now)
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-As you can see, we can't push all these commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
+As you can see, we can't push all these commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code until it's done? Then, we could have deployed the commit that fixes the application without the new-feature. We can do exactly this using a feature in git called branches.
 
 ## Getting started with the Master branch.
 
