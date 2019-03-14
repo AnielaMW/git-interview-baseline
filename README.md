@@ -53,15 +53,6 @@ Let's make a repository that we can use as a sandbox to experiment with the coll
 
 From our home directory we're going to make a new directory for our mission-critical-application.
 
-```
-~ $ mkdir mission-critical-application
-~ $ cd mission-critical-application
-mission-critical-application $ git init
-mission-critical-application $ touch application.rb
-mission-critical-application $ git add application.rb
-mission-critical-application $ git commit -m "First working version of application.rb"
-```
-
 1. We made a new directory with `mkdir mission-critical-application`.
 2. We moved into that directory with `cd mission-critical-application`.
 3. We turned that directory into a git repository with `git init`.
