@@ -14,7 +14,7 @@
 
 ## Overview
 
-The key to collaborating with git is to keep individual lines of work isolated from the currently working codebase.
+The key to collaborating with git is to keep individual lines of work isolated from the currently working codebase. This makes it easier to deploy the completed fixes, features, and changes individually regardless of other unincorporated changes to the application.
 
 Consider the following scenario.
 
