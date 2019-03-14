@@ -170,6 +170,7 @@ Switched to branch 'master'
 ```
 
 ![Switching between branches](https://dl.dropboxusercontent.com/s/qzajqsd9f6njauc/2015-11-02%20at%2012.12%20PM.png)
+<!-- I would rotate this graphic so that the timeline maintained the existing format found in the other graphics. Changing it's orientation might be confusing to the reader. -->
 
 From master, one thing you'll notice is that the code you wrote on `new-feature`, namely the file, `new-feature-file`, is not present in the current directory.
 
